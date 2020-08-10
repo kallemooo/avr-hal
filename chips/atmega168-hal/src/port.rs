@@ -9,9 +9,9 @@ pub trait PortExt {
 
 avr_hal::impl_generic_pin! {
     pub enum Pin {
-        B(crate::atmega168::PORTB, portb, pinb),
-        C(crate::atmega168::PORTC, portc, pinc),
-        D(crate::atmega168::PORTD, portd, pind),
+        B(crate::atmega168::PORTB, portb, pinb, ddrb),
+        C(crate::atmega168::PORTC, portc, pinc, ddrc),
+        D(crate::atmega168::PORTD, portd, pind, ddrd),
     }
 }
 
